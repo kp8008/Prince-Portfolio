@@ -161,18 +161,82 @@
     min-width: 0;
   }
 
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
+  /* ------------------------------------------------------------------ */
+  /* Refined motion — keeps the page lively without feeling heavy        */
+  /* ------------------------------------------------------------------ */
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1),
+      transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up {
+      opacity: 1;
+      transform: none;
+      transition: none;
     }
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
+  /* Card lift on hover */
+  .card-hover {
+    transition:
+      transform 0.22s cubic-bezier(0.23, 1, 0.32, 1),
+      box-shadow 0.22s cubic-bezier(0.23, 1, 0.32, 1),
+      border-color 0.22s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px -8px rgba(99, 102, 241, 0.25);
+    border-color: rgba(99, 102, 241, 0.4);
+  }
+
+  /* Project image zoom on hover */
+  .img-zoom {
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group:hover .img-zoom {
+    transform: scale(1.05);
+  }
+
+  /* Dot grid background used in hero */
+  .dot-grid {
+    background-image: radial-gradient(rgba(99, 102, 241, 0.14) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+/* Soft floating for decorative hero shapes */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(3deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-float {
+    animation: float-slow 7s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem; /* 24px - tablet padding */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem; /* 32px - desktop padding */
+    padding-right: 2rem;
+    max-width: 1280px; /* Standard content width */
   }
 }
