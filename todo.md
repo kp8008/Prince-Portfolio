@@ -31,3 +31,7 @@
 - [x] Navbar refinements: animated logo, hover color transitions, thinner bar
 - [x] Visual verification via full-page screenshot (desktop)
 - [x] Tests passing (7/7), checkpointed and delivered
+## Small change round 2
+- [x] Hero card: replaced "Mentoring" with "Web Development" and enlarged the icon (h-6 w-6)
+- [x] Bottom CTA: added WhatsApp logo/icon to the WhatsApp button
+- [x] Education: changed "GSEB" to "GSHSEB" for 10th and 12th
