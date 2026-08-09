@@ -35,3 +35,8 @@
 - [x] Hero card: replaced "Mentoring" with "Web Development" and enlarged the icon (h-6 w-6)
 - [x] Bottom CTA: added WhatsApp logo/icon to the WhatsApp button
 - [x] Education: changed "GSEB" to "GSHSEB" for 10th and 12th
+## Small change round 3
+- [x] Modal title changed to "Send Email Directly"
+- [x] Top "Get In Touch" button opens WhatsApp chat (917778899750) with predefined message
+- [x] Bottom WhatsApp button opens WhatsApp chat (917778899750) with predefined message
+- [x] "Let's Work Together" CTA module background light blue (bg-primary/5 + border-primary/25)
