@@ -6,5 +6,4 @@ Personal portfolio website of **Prince Katariya** — a B.Tech Computer Science 
 
 **[https://princefolio-hczfqlyw.manus.space](https://princefolio-hczfqlyw.manus.space)**
 
-```
 
