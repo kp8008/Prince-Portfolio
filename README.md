@@ -8,12 +8,3 @@ Personal portfolio website of **Prince Katariya** — a B.Tech Computer Science 
 
 ```
 
-## Contact
-
-| Channel | Link |
-|---|---|
-| Email | princekatariyaprince@gmail.com |
-| LinkedIn | [linkedin.com/in/prince-katariya-14225514s](http://www.linkedin.com/in/prince-katariya-14225514s) |
-| GitHub | [github.com/kp8008](https://github.com/kp8008) |
-
-
